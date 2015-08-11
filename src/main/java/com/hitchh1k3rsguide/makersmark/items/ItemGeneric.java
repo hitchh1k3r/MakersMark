@@ -5,8 +5,8 @@ import com.hitchh1k3rsguide.makersmark.MakersMark;
 public class ItemGeneric extends MakersBaseItem
 {
 
-    private String name;
-    RecipeRegister recipeRegister;
+    private String         name;
+    private RecipeRegister recipeRegister;
 
     public ItemGeneric(String name, RecipeRegister recipeRegister)
     {

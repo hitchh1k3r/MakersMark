@@ -35,7 +35,7 @@ public class GUIInspection extends GuiScreen
     private int          midX, midY;
     private boolean moved = false;
 
-    public static enum Mode
+    public enum Mode
     {
         NORMAL, ADVANCED, LIMITED
     }

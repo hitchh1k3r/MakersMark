@@ -22,7 +22,7 @@ import java.lang.reflect.Field;
 public class CraftingDieSigning implements IRecipe
 {
 
-    ItemStack output = null;
+    private ItemStack output = null;
     public static final Field FIELD_eventHandler;
 
     static

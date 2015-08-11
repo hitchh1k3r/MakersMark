@@ -112,7 +112,7 @@ public class ItemCustomPotion extends ItemPotion implements IMakersBase
     {
     }
 
-    public String getPotionEffectString(Potion potion)
+    private String getPotionEffectString(Potion potion)
     {
         for (int i = 0; i < 15 && i < potionTypes.length; ++i)
         {

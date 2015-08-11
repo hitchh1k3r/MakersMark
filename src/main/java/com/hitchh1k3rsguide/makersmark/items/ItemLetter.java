@@ -93,6 +93,7 @@ public class ItemLetter extends MakersBaseItem
 
     @Override
     @SideOnly(Side.CLIENT)
+    @SuppressWarnings("unchecked")
     public void addInformation(ItemStack stack, EntityPlayer playerIn, List tooltip, boolean advanced)
     {
         if (stack.hasTagCompound())

@@ -1,5 +1,6 @@
 package com.hitchh1k3rsguide.makersmark.asm;
 
+import com.hitchh1k3rsguide.$CORE_REPLACE$.hitchcore.CoreConfig;
 import com.hitchh1k3rsguide.$CORE_REPLACE$.hitchcore.CoreUtils;
 import com.hitchh1k3rsguide.makersmark.MakersMark;
 import com.hitchh1k3rsguide.makersmark.util.Utils;
@@ -10,7 +11,6 @@ import net.minecraft.tileentity.TileEntityBrewingStand;
 import net.minecraftforge.classloading.FMLForgePlugin;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassWriter;
-import org.objectweb.asm.Label;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.*;
 
@@ -22,21 +22,13 @@ public class ASMTransformer implements IClassTransformer
 {
 
     private static boolean TEST_MODE     = false;
-    public static  int     failureStatus = 0;
-    public static  String  patchFailures = "";
+    private static int     failureStatus = 0;
+    private static String  patchFailures = "";
 
     @Override
     public byte[] transform(String className, String newName, byte[] bytecode)
     {
-        if (newName.equals("net.minecraft.tileentity.TileEntityBrewingStand"))
-        {
-            if (TEST_MODE)
-            {
-                Utils.debugMsg("PATCHING TileEntityBrewingStand ::::::::::::::::::::::::::::::::::::::::::::::::::");
-            }
-            return patchBrewingStandTE(bytecode, !FMLForgePlugin.RUNTIME_DEOBF);
-        }
-        else if (newName.equals("net.minecraft.network.NetHandlerPlayServer"))
+        if (newName.equals("net.minecraft.network.NetHandlerPlayServer"))
         {
             if (TEST_MODE)
             {
@@ -59,6 +51,11 @@ public class ASMTransformer implements IClassTransformer
 
     public static void doPatches()
     {
+        if (TEST_MODE)
+        {
+            CoreConfig.debugMode = true;
+        }
+
         Class t;
         t = TileEntityBrewingStand.class;
         t = NetHandlerPlayServer.class;
@@ -219,59 +216,6 @@ public class ASMTransformer implements IClassTransformer
                 failureStatus = 1;
             }
             patchFailures += "<br />" + '\u00A0' + "- NetHandlerPlayServer :: <em>prevents servers from kicking players while using the potion of levitation</em>";
-        }
-
-        ClassWriter writer = new ClassWriter(ClassWriter.COMPUTE_MAXS);
-        classNode.accept(writer);
-        return writer.toByteArray();
-    }
-
-    private byte[] patchBrewingStandTE(byte[] bytecode, boolean isDeobfuscated)
-    {
-        // net.minecraft.tileentity.TileEntityBrewingStand
-
-        // NOTE (this shouldn't ever fail, unless canBrew is missing) adds hook to the top of the canBrew method to allow for external inspection of brew stacks before brewing!
-
-        ClassNode classNode = new ClassNode();
-        ClassReader classReader = new ClassReader(bytecode);
-        classReader.accept(classNode, 0);
-
-        // Patch Target Method:
-        MethodNode canBrew = getMethod(isDeobfuscated ? "canBrew" : "func_145934_k", "()Z", classNode);
-
-        if (canBrew != null)
-        {
-            // Patch New ASM (canBrew):
-            InsnList newInstructions = new InsnList();
-            newInstructions.add(new VarInsnNode(Opcodes.ALOAD, 0));
-            newInstructions.add(new FieldInsnNode(Opcodes.GETFIELD, "net/minecraft/tileentity/TileEntityBrewingStand", isDeobfuscated ? "brewingItemStacks" : "field_145945_j", "[Lnet/minecraft/item/ItemStack;"));
-            newInstructions.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/hitchh1k3rsguide/makersmark/util/HookUtils", "canBrew", "([Lnet/minecraft/item/ItemStack;)Z", false));
-            Label l1 = new Label();
-            LabelNode l1n = new LabelNode(l1);
-            newInstructions.add(new JumpInsnNode(Opcodes.IFEQ, l1n));
-            Label l2 = new Label();
-            LabelNode l2n = new LabelNode(l2);
-            newInstructions.add(l2n);
-            newInstructions.add(new FieldInsnNode(Opcodes.GETSTATIC, "com/hitchh1k3rsguide/makersmark/util/HookUtils", "canBrewResult", "Z"));
-            newInstructions.add(new InsnNode(Opcodes.IRETURN));
-            newInstructions.add(l1n);
-            newInstructions.add(new FrameNode(Opcodes.F_SAME, 0, null, 0, null));
-
-            // Do Patch (canBrew):
-            canBrew.instructions.insertBefore(canBrew.instructions.get(3), newInstructions);
-        }
-        else
-        {
-            if (TEST_MODE)
-            {
-                Utils.debugErr("Could not find method...");
-            }
-
-            if (failureStatus < 1)
-            {
-                failureStatus = 1;
-            }
-            patchFailures += "<br />" + '\u00A0' + "- TileEntityBrewingStand :: <em>adds a canBrew hook to allow for custom potions</em>";
         }
 
         ClassWriter writer = new ClassWriter(ClassWriter.COMPUTE_MAXS);

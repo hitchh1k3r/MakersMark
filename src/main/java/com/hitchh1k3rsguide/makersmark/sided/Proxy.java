@@ -45,29 +45,29 @@ public class Proxy
     public interface IProxy
     {
 
-        public void construction(FMLConstructionEvent event);
+        void construction(FMLConstructionEvent event);
 
-        public void postInit(FMLPostInitializationEvent event);
+        void postInit(FMLPostInitializationEvent event);
 
-        public void init(FMLInitializationEvent event);
+        void init(FMLInitializationEvent event);
 
-        public void preInit(FMLPreInitializationEvent event);
+        void preInit(FMLPreInitializationEvent event);
 
-        public void loadComplete(FMLLoadCompleteEvent event);
+        void loadComplete(FMLLoadCompleteEvent event);
 
-        public void serverPreStart(FMLServerAboutToStartEvent event);
+        void serverPreStart(FMLServerAboutToStartEvent event);
 
-        public void serverStart(FMLServerStartingEvent event);
+        void serverStart(FMLServerStartingEvent event);
 
-        public void serverPostStart(FMLServerStartedEvent event);
+        void serverPostStart(FMLServerStartedEvent event);
 
-        public void serverPreStop(FMLServerStoppingEvent event);
+        void serverPreStop(FMLServerStoppingEvent event);
 
-        public void serverPostStop(FMLServerStoppedEvent event);
+        void serverPostStop(FMLServerStoppedEvent event);
 
-        public void registerItem(IMakersBase item);
+        void registerItem(IMakersBase item);
 
-        public void registerBlock(IMakersBase block);
+        void registerBlock(IMakersBase block);
 
     }
 

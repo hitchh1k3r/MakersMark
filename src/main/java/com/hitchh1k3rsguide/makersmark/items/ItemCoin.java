@@ -151,6 +151,7 @@ public class ItemCoin extends MakersBaseItem
 
     @Override
     @SideOnly(Side.CLIENT)
+    @SuppressWarnings("unchecked")
     public void getSubItems(Item itemIn, CreativeTabs tab, List list)
     {
         for (MaterialDefinition metal : metals.values())
@@ -319,6 +320,7 @@ public class ItemCoin extends MakersBaseItem
     }
 
     @Override
+    @SuppressWarnings("unchecked")
     public void addInformation(ItemStack stack, EntityPlayer playerIn, List tooltip, boolean advanced)
     {
         if (stack.hasTagCompound())

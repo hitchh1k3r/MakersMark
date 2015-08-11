@@ -126,6 +126,8 @@ public class BlockMailbox extends MakersBaseBlock implements ITileEntityProvider
     }
 
     @Override
+    // We override the lower level function to assure both entry points work!
+    @SuppressWarnings("deprecation")
     public ItemStack getPickBlock(MovingObjectPosition target, World world, BlockPos pos)
     {
         Item item = getItem(world, pos);
@@ -152,6 +154,7 @@ public class BlockMailbox extends MakersBaseBlock implements ITileEntityProvider
 
     @Override
     @SideOnly(Side.CLIENT)
+    @SuppressWarnings("unchecked")
     public void getSubBlocks(Item itemIn, CreativeTabs tab, List list)
     {
         BlockPlanks.EnumType[] aenumtype = BlockPlanks.EnumType.values();

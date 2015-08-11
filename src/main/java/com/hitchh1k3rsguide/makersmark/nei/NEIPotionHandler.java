@@ -37,8 +37,8 @@ public class NEIPotionHandler extends BrewingRecipeHandler
 
     }
 
-    public static final ItemStackSet           allIngredients = new ItemStackSet();
-    public static final HashSet<BrewingRecipe> allRecipes     = new HashSet<BrewingRecipe>();
+    private static final ItemStackSet           allIngredients = new ItemStackSet();
+    private static final HashSet<BrewingRecipe> allRecipes     = new HashSet<BrewingRecipe>();
 
     public static void initRecipes()
     {

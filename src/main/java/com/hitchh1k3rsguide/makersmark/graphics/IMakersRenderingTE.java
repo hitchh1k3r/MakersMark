@@ -6,6 +6,6 @@ import net.minecraft.tileentity.TileEntity;
 public interface IMakersRenderingTE
 {
 
-    public void renderTileEntityAt(TileEntity tileEntity, double renderX, double renderY, double renderZ, float partialTick, int blockDamage, TileEntitySpecialRenderer renderer);
+    void renderTileEntityAt(TileEntity tileEntity, double renderX, double renderY, double renderZ, float partialTick, int blockDamage, TileEntitySpecialRenderer renderer);
 
 }

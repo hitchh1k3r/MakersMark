@@ -6,6 +6,6 @@ import net.minecraft.inventory.IInventory;
 public interface IPickupInventory extends IInventory
 {
 
-    public void onPickupSlot(EntityPlayer player, int index);
+    void onPickupSlot(EntityPlayer player, int index);
 
 }

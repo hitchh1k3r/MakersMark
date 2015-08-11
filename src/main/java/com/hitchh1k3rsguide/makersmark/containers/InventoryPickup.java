@@ -20,7 +20,7 @@ public class InventoryPickup extends InventoryBasic implements IPickupInventory
 
         for (i = 0; i < this.getSizeInventory(); ++i)
         {
-            this.setInventorySlotContents(i, (ItemStack) null);
+            this.setInventorySlotContents(i, null);
         }
 
         for (i = 0; i < p_70486_1_.tagCount(); ++i)

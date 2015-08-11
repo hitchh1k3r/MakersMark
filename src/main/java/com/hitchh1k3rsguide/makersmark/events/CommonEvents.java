@@ -40,7 +40,7 @@ public class CommonEvents
         }
     }
 
-    long lastAnvil = 0L;
+    private long lastAnvil = 0L;
 
     @SubscribeEvent
     public void onCrafted(PlayerEvent.ItemCraftedEvent event)

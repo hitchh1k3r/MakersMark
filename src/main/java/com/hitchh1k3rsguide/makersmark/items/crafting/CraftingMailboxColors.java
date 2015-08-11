@@ -13,8 +13,8 @@ import net.minecraftforge.oredict.OreDictionary;
 public class CraftingMailboxColors implements IRecipe
 {
 
-    ItemStack output = null;
-    private static final int[] colorToOre = new int[16];
+    private              ItemStack output     = null;
+    private static final int[]     colorToOre = new int[16];
 
     static
     {

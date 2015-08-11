@@ -1,8 +1,8 @@
 package com.hitchh1k3rsguide.makersmark.util;
 
+import com.hitchh1k3rsguide.$CORE_REPLACE$.hitchcore.CoreConfig;
 import com.hitchh1k3rsguide.makersmark.MakersMark;
 import com.hitchh1k3rsguide.makersmark.containers.ContainerMailbox;
-import com.hitchh1k3rsguide.$CORE_REPLACE$.hitchcore.CoreConfig;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -33,7 +33,7 @@ public class Utils
         {
             PLAYER_FOLDER = new File(MinecraftServer.getServer().worldServerForDimension(0).getSaveHandler().getWorldDirectory(), "playerdata");
         }
-        catch (Exception e) {}
+        catch (Exception ignored) {}
         ContainerMailbox.reloadMailCount();
     }
 
@@ -115,7 +115,7 @@ public class Utils
                     }
                 }
             }
-            catch (IOException e) {}
+            catch (IOException ignored) {}
         }
         return null;
     }
@@ -156,7 +156,7 @@ public class Utils
                     CompressedStreamTools.writeCompressed(data, new FileOutputStream(file));
                 }
             }
-            catch (IOException e) {}
+            catch (IOException ignored) {}
         }
     }
 
@@ -178,6 +178,7 @@ public class Utils
         return field;
     }
 
+    @SuppressWarnings("unchecked")
     public static Method getMethod(Class classRef, String deobfuscatedName, String obfuscatedName, Class<?>... params)
     {
         Method method = null;

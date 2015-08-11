@@ -6,16 +6,16 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public interface IMakersBase
 {
 
-    public String getUnlocalizedNameRaw();
+    String getUnlocalizedNameRaw();
 
-    public String getTextureName();
+    String getTextureName();
 
-    public void commonRegister();
+    void commonRegister();
 
     @SideOnly(Side.CLIENT)
-    public void clientRegister();
+    void clientRegister();
 
     @SideOnly(Side.SERVER)
-    public void serverRegister();
+    void serverRegister();
 
 }

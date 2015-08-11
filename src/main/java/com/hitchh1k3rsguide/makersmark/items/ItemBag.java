@@ -176,6 +176,7 @@ public class ItemBag extends MakersBaseItem
         }
     }
 
+    @SuppressWarnings("unchecked")
     public static void addInventoryToTooltip(ItemStack stack, List tooltip)
     {
         InventoryPickup temp = new InventoryPickup("", false, 3);

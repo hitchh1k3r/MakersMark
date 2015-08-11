@@ -43,6 +43,7 @@ public class ItemCoinDie extends MakersBaseItem
 
     @Override
     @SideOnly(Side.CLIENT)
+    @SuppressWarnings("unchecked")
     public void getSubItems(Item itemIn, CreativeTabs tab, java.util.List list)
     {
         for (int p = 0; p < ItemCoin.SHAPES.length; ++p)
@@ -108,6 +109,7 @@ public class ItemCoinDie extends MakersBaseItem
 
     @Override
     @SideOnly(Side.CLIENT)
+    @SuppressWarnings("unchecked")
     public void addInformation(ItemStack stack, EntityPlayer playerIn, List tooltip, boolean advanced)
     {
         if (stack.hasTagCompound())

@@ -20,7 +20,7 @@ import net.minecraft.world.World;
 public class CraftingBag implements IRecipe
 {
 
-    ItemStack output = null;
+    private ItemStack output = null;
 
     @Override
     public boolean matches(InventoryCrafting inventory, World world)

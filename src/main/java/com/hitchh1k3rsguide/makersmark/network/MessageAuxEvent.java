@@ -27,7 +27,7 @@ public class MessageAuxEvent implements IMessage
     private int x, y, z, data;
 
     @SideOnly(Side.CLIENT)
-    public static Method METHOD_spawnEntityFX;
+    private static Method METHOD_spawnEntityFX;
     private boolean initialized = false;
 
     public MessageAuxEvent()
@@ -64,7 +64,7 @@ public class MessageAuxEvent implements IMessage
     }
 
     @SideOnly(Side.CLIENT)
-    public void doWorldAuxEvent()
+    private void doWorldAuxEvent()
     {
         if (!initialized)
         {
@@ -109,7 +109,7 @@ public class MessageAuxEvent implements IMessage
                         entityfx.multiplyVelocity((float) mag);
                     }
                 }
-                catch (Exception e)
+                catch (Exception ignored)
                 {
                 }
             }

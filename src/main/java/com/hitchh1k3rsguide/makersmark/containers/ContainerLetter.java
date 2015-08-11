@@ -27,6 +27,7 @@ public class ContainerLetter extends Container implements IStringReciever
     private List basicInventory, fullInventory;
     public int invBlankX, invBlankY, invBlankID;
 
+    @SuppressWarnings("unchecked")
     public ContainerLetter(ItemStack letter, EntityPlayer player)
     {
         inventory = new InventoryLetter();

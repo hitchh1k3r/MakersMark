@@ -8,8 +8,8 @@ import net.minecraft.item.ItemStack;
 public class ItemMailbox extends MakersBaseItemBlock
 {
 
-    final Block                       theBlock;
-    final Function<ItemStack, String> nameFunction;
+    private final Block                       theBlock;
+    private final Function<ItemStack, String> nameFunction;
 
     public ItemMailbox(Block block)
     {
