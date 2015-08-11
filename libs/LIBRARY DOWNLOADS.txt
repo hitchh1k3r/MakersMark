@@ -1,0 +1,7 @@
+You will have to download and place in this folder the following libraries:
+
+CodeChickenLib 1.8 1.1.2.115-dev
+    http://files.minecraftforge.net/CodeChickenLib/
+
+NoteEnoughItems 1.8 1.0.5.82-dev
+    http://chickenbones.net/filedownloader/download.html?fn=Tm90RW5vdWdoSXRlbXMvMS44LTEuMC41LjgyL05vdEVub3VnaEl0ZW1zLTEuOC0xLjAuNS44Mi1kZXYuamFy

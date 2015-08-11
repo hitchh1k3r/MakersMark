@@ -1,0 +1,222 @@
+####################################################################################
+################################### MAKER'S MARK ###################################
+####################################################################################
+
+####################################################################################
+# Blocks:
+
+tile.makersmark.mailbox.oak.name=Oak Mailbox
+tile.makersmark.mailbox.birch.name=Birch Mailbox
+tile.makersmark.mailbox.spruce.name=Spruce Mailbox
+tile.makersmark.mailbox.jungle.name=Jungle Mailbox
+tile.makersmark.mailbox.acacia.name=Acacia Mailbox
+tile.makersmark.mailbox.big_oak.name=Dark Oak Mailbox
+
+####################################################################################
+# Items:
+
+item.makersmark.minters_mallet.name=Minter's Mallet
+item.makersmark.makers_mark.name=Maker's Mark
+item.makersmark.die.name=Coin Die
+item.makersmark.inspectors_glass.name=Inspector's Glass
+item.makersmark.advanced_glass.name=Advanced Inspector's Glass
+item.makersmark.bag.name=Leather Bag
+item.makersmark.letter.name=Letter
+item.makersmark.golden_feather.name=Golden Feather
+potion.makersmark.levitation.postfix=Potion of Levitation
+
+####################################################################################
+# Potion Effects:
+
+potion.makersmark.levitation=Levitation
+
+####################################################################################
+# Coins:
+
+item.makersmark.token.unknown.name=Wooden Token
+item.makersmark.token.oak.name=Oak Token
+item.makersmark.token.birch.name=Birch Token
+item.makersmark.token.spruce.name=Spruce Token
+item.makersmark.token.jungle.name=Jungle Token
+item.makersmark.token.acacia.name=Acacia Token
+item.makersmark.token.big_oak.name=Dark Oak Token
+item.makersmark.token.sacred_oak.name=Sacred Oak Token
+item.makersmark.token.cherry.name=Cherry Token
+item.makersmark.token.fir.name=Fir Token
+item.makersmark.token.ethereal.name=Ethereal Wood Token
+item.makersmark.token.magic.name=Magic Wood Token
+item.makersmark.token.mangrove.name=Mangrove Token
+item.makersmark.token.palm.name=Palm Token
+item.makersmark.token.redwood.name=Redwood Token
+item.makersmark.token.willow.name=Willow Token
+item.makersmark.token.bamboo.name=Bamboo Token
+item.makersmark.token.pine.name=Pine Token
+item.makersmark.token.hell_bark.name=Hell Bark Token
+item.makersmark.token.jacaranda.name=Jacaranda Token
+item.makersmark.token.mahogany.name=Mahogany Token
+item.makersmark.token.eucalyptus.name=Eucalyptus Token
+item.makersmark.token.sakura.name=Sakura Token
+item.makersmark.token.ghost.name=Ghostwood Token
+item.makersmark.token.hopseed.name=Hopseed Token
+item.makersmark.token.blood.name=Bloodwood Token
+item.makersmark.token.maple.name=Maple Token
+item.makersmark.token.silverbell.name=Silverbell Token
+item.makersmark.token.tiger.name=Tigerwood Token
+item.makersmark.token.amaranth.name=Amaranth Token
+item.makersmark.token.darkwood.name=Darkwood Token
+item.makersmark.token.fusewood.name=Fusewood Token
+
+item.makersmark.unfinished_coin.unknown.name=Unfinished Coin
+item.makersmark.unfinished_coin.adamantium.name=Unfinished Adamantium Coin
+item.makersmark.unfinished_coin.adamantine.name=Unfinished Adamantine Coin
+item.makersmark.unfinished_coin.aluminum.name=Unfinished Aluminum Coin
+item.makersmark.unfinished_coin.aquarium.name=Unfinished Aquarium Coin
+item.makersmark.unfinished_coin.blazium.name=Unfinished Blazium Coin
+item.makersmark.unfinished_coin.bluealloy.name=Unfinished Blue Alloy Coin
+item.makersmark.unfinished_coin.brass.name=Unfinished Brass Coin
+item.makersmark.unfinished_coin.bronze.name=Unfinished Bronze Coin
+item.makersmark.unfinished_coin.chromium.name=Unfinished Chromium Coin
+item.makersmark.unfinished_coin.coldiron.name=Unfinished Cold-Iron Coin
+item.makersmark.unfinished_coin.copper.name=Unfinished Copper Coin
+item.makersmark.unfinished_coin.electrum.name=Unfinished Electrum Coin
+item.makersmark.unfinished_coin.foolsgold.name=Unfinished Fool's Gold Coin
+item.makersmark.unfinished_coin.gold.name=Unfinished Gold Coin
+item.makersmark.unfinished_coin.invar.name=Unfinished Invar Coin
+item.makersmark.unfinished_coin.iron.name=Unfinished Iron Coin
+item.makersmark.unfinished_coin.lanite.name=Unfinished Lanite Coin
+item.makersmark.unfinished_coin.lead.name=Unfinished Lead Coin
+item.makersmark.unfinished_coin.manganese.name=Unfinished Manganese Coin
+item.makersmark.unfinished_coin.mithril.name=Unfinished Mithril Coin
+item.makersmark.unfinished_coin.nickel.name=Unfinished Nickel Coin
+item.makersmark.unfinished_coin.platinum.name=Unfinished Platinum Coin
+item.makersmark.unfinished_coin.plutonium.name=Unfinished Plutonium Coin
+item.makersmark.unfinished_coin.quartz.name=Unfinished Quartz Coin
+item.makersmark.unfinished_coin.radioactivelead.name=Unfinished Radioactive Lead Coin
+item.makersmark.unfinished_coin.redalloy.name=Unfinished Red Alloy Coin
+item.makersmark.unfinished_coin.redstone.name=Unfinished Redstone Coin
+item.makersmark.unfinished_coin.silver.name=Unfinished Silver Coin
+item.makersmark.unfinished_coin.starsteel.name=Unfinished Star-Steel Coin
+item.makersmark.unfinished_coin.steel.name=Unfinished Steel Coin
+item.makersmark.unfinished_coin.tin.name=Unfinished Tin Coin
+item.makersmark.unfinished_coin.titanium.name=Unfinished Titanium Coin
+item.makersmark.unfinished_coin.torite.name=Unfinished Torite Coin
+item.makersmark.unfinished_coin.tungsten.name=Unfinished Tungsten Coin
+item.makersmark.unfinished_coin.thaumium.name=Unfinished Thaumium Coin
+item.makersmark.unfinished_coin.uranium.name=Unfinished Uranium Coin
+item.makersmark.unfinished_coin.zinc.name=Unfinished Zinc Coin
+
+item.makersmark.coin.unknown.name=Coin
+item.makersmark.coin.adamantium.name=Adamantium Coin
+item.makersmark.coin.adamantine.name=Adamantine Coin
+item.makersmark.coin.aluminum.name=Aluminum Coin
+item.makersmark.coin.aquarium.name=Aquarium Coin
+item.makersmark.coin.blazium.name=Blazium Coin
+item.makersmark.coin.bluealloy.name=Blue Alloy Coin
+item.makersmark.coin.brass.name=Brass Coin
+item.makersmark.coin.bronze.name=Bronze Coin
+item.makersmark.coin.chromium.name=Chromium Coin
+item.makersmark.coin.coldiron.name=Cold-Iron Coin
+item.makersmark.coin.copper.name=Copper Coin
+item.makersmark.coin.electrum.name=Electrum Coin
+item.makersmark.coin.foolsgold.name=Fool's Gold Coin
+item.makersmark.coin.gold.name=Gold Coin
+item.makersmark.coin.invar.name=Invar Coin
+item.makersmark.coin.iron.name=Iron Coin
+item.makersmark.coin.lanite.name=Lanite Coin
+item.makersmark.coin.lead.name=Lead Coin
+item.makersmark.coin.manganese.name=Manganese Coin
+item.makersmark.coin.mithril.name=Mithril Coin
+item.makersmark.coin.nickel.name=Nickel Coin
+item.makersmark.coin.platinum.name=Platinum Coin
+item.makersmark.coin.plutonium.name=Plutonium Coin
+item.makersmark.coin.quartz.name=Quartz Coin
+item.makersmark.coin.radioactivelead.name=Radioactive Lead Coin
+item.makersmark.coin.redalloy.name=Red Alloy Coin
+item.makersmark.coin.redstone.name=Redstone Coin
+item.makersmark.coin.silver.name=Silver Coin
+item.makersmark.coin.starsteel.name=Star-Steel Coin
+item.makersmark.coin.steel.name=Steel Coin
+item.makersmark.coin.tin.name=Tin Coin
+item.makersmark.coin.titanium.name=Titanium Coin
+item.makersmark.coin.torite.name=Torite Coin
+item.makersmark.coin.tungsten.name=Tungsten Coin
+item.makersmark.coin.thaumium.name=Thaumium Coin
+item.makersmark.coin.uranium.name=Uranium Coin
+item.makersmark.coin.zinc.name=Zinc Coin
+
+####################################################################################
+# Inspection:
+
+makersmark.report.token=Crafted by %1$s
+makersmark.report.basic.yes=This object bears your mark.
+makersmark.report.basic.no=This object does not bear your mark.
+makersmark.report.advanced.coin.yes=Minters:
+makersmark.report.advanced.coin.no=This coin bears no markings.
+makersmark.report.advanced.object.yes=This object has been marked by %1$s.
+makersmark.report.advanced.object.no=This object bears no markings.
+makersmark.report.limited.coin=Coin minters cannot be determined.
+
+####################################################################################
+# Other:
+
+itemGroup.makersmark=Maker's Mark: The Minter's Mod
+container.makersmark.mailbox=Mailbox
+container.makersmark.bag=Leather Bag
+container.makersmark.inspection=Inspection
+makersmark.letter.byAuthor=From: %1$s
+nei.makersmark.recipe.crafting=Maker's Mark Crafting
+nei.makersmark.recipe.brewing=Maker's Mark Brewing
+nei.makersmark.recipe.anvil=Anvil Crafting
+
+####################################################################################
+# Config:
+
+makersmark.configgui.limitedInspection=Limited Inspection
+makersmark.configgui.limitedInspection.tooltip=When enabled there is only the diamond tier inspector's glass. It is also limited to basic inspection on non-coin objects, and can not inspect coins.
+makersmark.configgui.creativeCoins=Show All Coins
+makersmark.configgui.creativeCoins.tooltip=When enabled the creative inventory will list every coin pattern for every metal (448 each).
+makersmark.configgui.creativeMailboxes=Show All Mailboxes
+makersmark.configgui.creativeMailboxes.tooltip=When enabled the creative inventory will list every mailbox color for every wood.
+makersmark.configgui.nuggetsEnabled=Coin To Nuggets
+makersmark.configgui.nuggetsEnabled.tooltip=When enabled coins can be melted down to nuggets, if the mod providing the ingot also provides a nugget.
+
+####################################################################################
+#################################### HITCHCORE ####################################
+####################################################################################
+
+####################################################################################
+# Config:
+
+hitchcore.title=HitchH1k3r's Mods
+hitchcore.configgui.mod.tooltip=Settings for %1$s
+hitchcore.configgui.general=General Settings
+hitchcore.configgui.general.tooltip=General settings for HitchH1k3r's Mods
+hitchcore.configgui.advanced=Advanced Settings
+hitchcore.configgui.advanced.tooltip=Advanced settings for HitchH1k3r's Mods
+hitchcore.configgui.general.updateCheck=Update Check
+hitchcore.configgui.general.updateCheck.tooltip=When enabled HitchH1k3r's Mods will check if there is a newer version on startup.
+hitchcore.configgui.advanced.debugMode=Debug Mode
+hitchcore.configgui.advanced.debugMode.tooltip=When enabled HitchH1k3r's Mods will print extra messages to the console that can be useful for debugging.
+
+####################################################################################
+# Update:
+
+hitchcore.update.none=All HitchH1k3r's Mods are up to date!
+hitchcore.update.description=%1$s -> %2$s
+hitchcore.update.nag=§3%1$s §rhas been updated! §3(%2$s -> %3$s)
+hitchcore.update.change.prompt=Type §3/hitch changes §rfor more information.
+hitchcore.update.change.list=§3%1$s §rChanges: §3(%2$s -> %3$s)
+hitchcore.update.change.download=You can download updates at:
+
+####################################################################################
+# Command:
+
+commands.hitch.usage=/hitch <command> or /hitch help
+commands.hitch.help=--- Help for /hitch <command>'s ---
+commands.hitch.help.help=/hitch help
+commands.hitch.help.changes=/hitch changes
+commands.hitch.help.config=/hitch config [server/client] <category:property> <new value>
+commands.hitch.config.notify=HitchH1k3r's Mods - Set %s to %s
+commands.hitch.config.propertyError=Configuration property not found
+commands.hitch.config.valueError=Invalid value for %s
+commands.hitch.config.operatorError=You do not have permission to change that property

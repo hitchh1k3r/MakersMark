@@ -1,0 +1,59 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "#wood",
+    "decals": "makersmark:blocks/mailbox_decals"
+  },
+  "elements": [
+    {
+      "from": [ 0, 14, 2 ],
+      "to": [ 16, 16, 14 ],
+      "faces": {
+        "down":  { "uv": [ 0, 2, 16, 14 ], "texture": "#wood" },
+        "up":    { "uv": [ 0, 2, 16, 14 ], "texture": "#wood", "cullface": "up" },
+        "north": { "uv": [ 0, 14, 16, 16 ], "texture": "#wood" },
+        "south": { "uv": [ 0, 14, 16, 16 ], "texture": "#wood" },
+        "west":  { "uv": [ 2, 14, 14, 16 ], "texture": "#wood", "cullface": "west" },
+        "east":  { "uv": [ 2, 14, 14, 16 ], "texture": "#wood", "cullface": "east" }
+      }
+    },
+    {
+      "from": [ 1.5, 0, 3 ],
+      "to": [ 14.5, 14, 13 ],
+      "faces": {
+        "down":  { "uv": [ 1.5, 3, 14.5, 13 ], "texture": "#wood", "cullface": "down" },
+        "north": { "uv": [ 1.5, 0, 14.5, 14 ], "texture": "#wood" },
+        "south": { "uv": [ 1.5, 0, 14.5, 14 ], "texture": "#wood" },
+        "west":  { "uv": [ 3, 0, 13, 14 ], "texture": "#wood" },
+        "east":  { "uv": [ 3, 0, 13, 14 ], "texture": "#wood" }
+      }
+    },
+    {
+      "from": [ 14.5, 9, 4.5 ],
+      "to": [ 15.5, 12, 11.5 ],
+      "faces": {
+        "down":  { "uv": [ 1, 4, 8, 5 ], "texture": "#decals", "tintindex": 1 },
+        "up":    { "uv": [ 1, 0, 8, 1 ], "texture": "#decals", "tintindex": 1 },
+        "north": { "uv": [ 8, 1, 9, 4 ], "texture": "#decals", "tintindex": 1 },
+        "south": { "uv": [ 0, 1, 1, 4 ], "texture": "#decals", "tintindex": 1 },
+        "east":  { "uv": [ 1, 1, 8, 4 ], "texture": "#decals", "tintindex": 1 }
+      }
+    },
+    {
+      "from": [ 2.5, 1.5, 2.9 ],
+      "to": [ 13.5, 12.5, 2.9 ],
+      "rotation": { "origin": [ 8, 7, 3 ], "axis": "z", "angle": 22.5 },
+      "faces": {
+        "north":  { "uv": [ 0, 5, 11, 16 ], "texture": "#decals", "tintindex": 1 }
+      }
+    },
+    {
+      "from": [ 2.5, 1.5, 13.1 ],
+      "to": [ 13.5, 12.5, 13.1 ],
+      "rotation": { "origin": [ 8, 7, 13 ], "axis": "z", "angle": -22.5 },
+      "faces": {
+        "south":  { "uv": [ 0, 5, 11, 16 ], "texture": "#decals", "tintindex": 1 }
+      }
+    }
+  ]
+}

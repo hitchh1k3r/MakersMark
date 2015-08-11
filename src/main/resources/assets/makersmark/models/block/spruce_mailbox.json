@@ -1,0 +1,6 @@
+{
+  "parent": "makersmark:block/mailbox",
+  "textures": {
+    "wood": "blocks/planks_spruce"
+  }
+}

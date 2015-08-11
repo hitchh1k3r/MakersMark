@@ -1,0 +1,33 @@
+{
+  "variants": {
+    "facing=east,variant=oak":  { "model": "makersmark:oak_mailbox" },
+    "facing=west,variant=oak":  { "model": "makersmark:oak_mailbox", "y": 180 },
+    "facing=south,variant=oak": { "model": "makersmark:oak_mailbox", "y": 90 },
+    "facing=north,variant=oak": { "model": "makersmark:oak_mailbox", "y": 270 },
+
+    "facing=east,variant=spruce":  { "model": "makersmark:spruce_mailbox" },
+    "facing=west,variant=spruce":  { "model": "makersmark:spruce_mailbox", "y": 180 },
+    "facing=south,variant=spruce": { "model": "makersmark:spruce_mailbox", "y": 90 },
+    "facing=north,variant=spruce": { "model": "makersmark:spruce_mailbox", "y": 270 },
+
+    "facing=east,variant=birch":  { "model": "makersmark:birch_mailbox" },
+    "facing=west,variant=birch":  { "model": "makersmark:birch_mailbox", "y": 180 },
+    "facing=south,variant=birch": { "model": "makersmark:birch_mailbox", "y": 90 },
+    "facing=north,variant=birch": { "model": "makersmark:birch_mailbox", "y": 270 },
+
+    "facing=east,variant=jungle":  { "model": "makersmark:jungle_mailbox" },
+    "facing=west,variant=jungle":  { "model": "makersmark:jungle_mailbox", "y": 180 },
+    "facing=south,variant=jungle": { "model": "makersmark:jungle_mailbox", "y": 90 },
+    "facing=north,variant=jungle": { "model": "makersmark:jungle_mailbox", "y": 270 },
+
+    "facing=east,variant=acacia":  { "model": "makersmark:acacia_mailbox" },
+    "facing=west,variant=acacia":  { "model": "makersmark:acacia_mailbox", "y": 180 },
+    "facing=south,variant=acacia": { "model": "makersmark:acacia_mailbox", "y": 90 },
+    "facing=north,variant=acacia": { "model": "makersmark:acacia_mailbox", "y": 270 },
+
+    "facing=east,variant=dark_oak":  { "model": "makersmark:dark_oak_mailbox" },
+    "facing=west,variant=dark_oak":  { "model": "makersmark:dark_oak_mailbox", "y": 180 },
+    "facing=south,variant=dark_oak": { "model": "makersmark:dark_oak_mailbox", "y": 90 },
+    "facing=north,variant=dark_oak": { "model": "makersmark:dark_oak_mailbox", "y": 270 }
+  }
+}

@@ -1,0 +1,222 @@
+####################################################################################
+################################### MAKER'S MARK ###################################
+####################################################################################
+
+####################################################################################
+# Blocks:
+
+tile.makersmark.mailbox.oak.name=Boîte aux lettres en chêne
+tile.makersmark.mailbox.birch.name=Boîte aux lettres en bouleau
+tile.makersmark.mailbox.spruce.name=Boîte aux lettres en épicéa
+tile.makersmark.mailbox.jungle.name=Boîte aux lettres en acajou
+tile.makersmark.mailbox.acacia.name=Boîte aux lettres en acacia
+tile.makersmark.mailbox.big_oak.name=Boîte aux lettres en chêne noir
+
+####################################################################################
+# Items:
+
+item.makersmark.minters_mallet.name=Maillet du monnayeur
+item.makersmark.makers_mark.name=Marque de fabrique
+item.makersmark.die.name=Coin
+item.makersmark.inspectors_glass.name=Loupe
+item.makersmark.advanced_glass.name=Loupe de précision
+item.makersmark.bag.name=Sac en cuir
+item.makersmark.letter.name=Lettre
+item.makersmark.golden_feather.name=Plume d'or
+potion.makersmark.levitation.postfix=Potion de lévitation
+
+####################################################################################
+# Potion Effects:
+
+potion.makersmark.levitation=Lévitation
+
+####################################################################################
+# Coins:
+
+item.makersmark.token.unknown.name=Jeton en bois
+item.makersmark.token.oak.name=Jeton en chêne
+item.makersmark.token.birch.name=Jeton en bouleau
+item.makersmark.token.spruce.name=Jeton en épicéa
+item.makersmark.token.jungle.name=Jeton en acajou
+item.makersmark.token.acacia.name=Jeton en acacia
+item.makersmark.token.big_oak.name=Jeton en chêne noir
+item.makersmark.token.sacred_oak.name=Jeton en chêne sacré
+item.makersmark.token.cherry.name=Jeton en cerisier
+item.makersmark.token.fir.name=Jeton en sapin
+item.makersmark.token.ethereal.name=Jeton en bois éthéré
+item.makersmark.token.magic.name=Jeton en bois magique
+item.makersmark.token.mangrove.name=Jeton en manglier
+item.makersmark.token.palm.name=Jeton en palmier
+item.makersmark.token.redwood.name=Jeton en séquoia
+item.makersmark.token.willow.name=Jeton en saule
+item.makersmark.token.bamboo.name=Jeton en bambou
+item.makersmark.token.pine.name=Jeton en pin
+item.makersmark.token.hell_bark.name=Jeton en écorce de l'enfer
+item.makersmark.token.jacaranda.name=Jeton en jacaranda
+item.makersmark.token.mahogany.name=Jeton en acajou
+item.makersmark.token.eucalyptus.name=Jeton en eucalyptus
+item.makersmark.token.sakura.name=Jeton en sakura
+item.makersmark.token.ghost.name=Jeton en bois fantômatique
+item.makersmark.token.hopseed.name=Jeton en hopseed
+item.makersmark.token.blood.name=Jeton en bois de sang
+item.makersmark.token.maple.name=Jeton en érable
+item.makersmark.token.silverbell.name=Jeton en halesia
+item.makersmark.token.tiger.name=Jeton en bois de tigre
+item.makersmark.token.amaranth.name=Jeton en amarante
+item.makersmark.token.darkwood.name=Jeton en bois sombre
+item.makersmark.token.fusewood.name=Jeton en bois explosif
+
+item.makersmark.unfinished_coin.unknown.name=Pièce brute
+item.makersmark.unfinished_coin.adamantium.name=Pièce brute en adamantium
+item.makersmark.unfinished_coin.adamantine.name=Pièce brute en adamantine
+item.makersmark.unfinished_coin.aluminum.name=Pièce brute en aluminium
+item.makersmark.unfinished_coin.aquarium.name=Pièce brute en aquarium
+item.makersmark.unfinished_coin.blazium.name=Pièce brute en blazium
+item.makersmark.unfinished_coin.bluealloy.name=Pièce brute en alliage bleu
+item.makersmark.unfinished_coin.brass.name=Pièce brute en laiton
+item.makersmark.unfinished_coin.bronze.name=Pièce brute en bronze
+item.makersmark.unfinished_coin.chromium.name=Pièce brute en chrome
+item.makersmark.unfinished_coin.coldiron.name=Pièce brute en fer froid
+item.makersmark.unfinished_coin.copper.name=Pièce brute en cuivre
+item.makersmark.unfinished_coin.electrum.name=Pièce brute en electrum
+item.makersmark.unfinished_coin.foolsgold.name=Pièce brute en or des fous
+item.makersmark.unfinished_coin.gold.name=Pièce brute en or
+item.makersmark.unfinished_coin.invar.name=Pièce brute en invar
+item.makersmark.unfinished_coin.iron.name=Pièce brute en fer
+item.makersmark.unfinished_coin.lanite.name=Pièce brute en lanite
+item.makersmark.unfinished_coin.lead.name=Pièce brute en plomb
+item.makersmark.unfinished_coin.manganese.name=Pièce brute en manganèse
+item.makersmark.unfinished_coin.mithril.name=Pièce brute en mithril
+item.makersmark.unfinished_coin.nickel.name=Pièce brute en nickel
+item.makersmark.unfinished_coin.platinum.name=Pièce brute en platine
+item.makersmark.unfinished_coin.plutonium.name=Pièce brute en plutonum
+item.makersmark.unfinished_coin.quartz.name=Pièce brute en quartz
+item.makersmark.unfinished_coin.radioactivelead.name=Pièce brute en plomb radioactif
+item.makersmark.unfinished_coin.redalloy.name=Pièce brute en alliage rouge
+item.makersmark.unfinished_coin.redstone.name=Pièce brute en redstone
+item.makersmark.unfinished_coin.silver.name=Pièce brute en argent
+item.makersmark.unfinished_coin.starsteel.name=Pièce brute en acier étoilé
+item.makersmark.unfinished_coin.steel.name=Pièce brute en acier
+item.makersmark.unfinished_coin.tin.name=Pièce brute en étain
+item.makersmark.unfinished_coin.titanium.name=Pièce brute en titane
+item.makersmark.unfinished_coin.torite.name=Pièce brute en torite
+item.makersmark.unfinished_coin.tungsten.name=Pièce brute en tungstène
+item.makersmark.unfinished_coin.thaumium.name=Pièce brute en thaumium
+item.makersmark.unfinished_coin.uranium.name=Pièce brute en uranium
+item.makersmark.unfinished_coin.zinc.name=Pièce brute en zinc
+
+item.makersmark.coin.unknown.name=Pièce
+item.makersmark.coin.adamantium.name=Pièce en adamantium
+item.makersmark.coin.adamantine.name=Pièce en adamantine
+item.makersmark.coin.aluminum.name=Pièce en aluminium
+item.makersmark.coin.aquarium.name=Pièce en aquarium
+item.makersmark.coin.blazium.name=Pièce en blazium
+item.makersmark.coin.bluealloy.name=Pièce en alliage bleu
+item.makersmark.coin.brass.name=Pièce en laiton
+item.makersmark.coin.bronze.name=Pièce en bronze
+item.makersmark.coin.chromium.name=Pièce en chrome
+item.makersmark.coin.coldiron.name=Pièce en fer froid
+item.makersmark.coin.copper.name=Pièce en cuivre
+item.makersmark.coin.electrum.name=Pièce en electrum
+item.makersmark.coin.foolsgold.name=Pièce en or des fous
+item.makersmark.coin.gold.name=Pièce en or
+item.makersmark.coin.invar.name=Pièce en invar
+item.makersmark.coin.iron.name=Pièce en fer
+item.makersmark.coin.lanite.name=Pièce en lanite
+item.makersmark.coin.lead.name=Pièce en plomb
+item.makersmark.coin.manganese.name=Pièce en manganèse
+item.makersmark.coin.mithril.name=Pièce en mithril
+item.makersmark.coin.nickel.name=Pièce en nickel
+item.makersmark.coin.platinum.name=Pièce en platine
+item.makersmark.coin.plutonium.name=Pièce en plutonium
+item.makersmark.coin.quartz.name=Pièce en quartz
+item.makersmark.coin.radioactivelead.name=Pièce en plomb radioactif
+item.makersmark.coin.redalloy.name=Pièce en alliage rouge
+item.makersmark.coin.redstone.name=Pièce en redstone
+item.makersmark.coin.silver.name=Pièce en argent
+item.makersmark.coin.starsteel.name=Pièce en acier étoilé
+item.makersmark.coin.steel.name=Pièce en acier
+item.makersmark.coin.tin.name=Pièce en étain
+item.makersmark.coin.titanium.name=Pièce en titane
+item.makersmark.coin.torite.name=Pièce en torite
+item.makersmark.coin.tungsten.name=Pièce en tungstène
+item.makersmark.coin.thaumium.name=Pièce en thaumium
+item.makersmark.coin.uranium.name=Pièce en uranium
+item.makersmark.coin.zinc.name=Pièce en zinc
+
+####################################################################################
+# Inspection:
+
+makersmark.report.token=Fabriqué par %1$s
+makersmark.report.basic.yes=Cet objet porte votre marque.
+makersmark.report.basic.no=Cet objet ne porte pas votre marque.
+makersmark.report.advanced.coin.yes=Monnayeurs:
+makersmark.report.advanced.coin.no=Cette pièce ne porte aucune marque.
+makersmark.report.advanced.object.yes=Cet objet a été marqué par %1$s.
+makersmark.report.advanced.object.no=Cet objet ne porte aucune marque.
+makersmark.report.limited.coin=Il est impossible de déterminer qui a frappé cette pièce.
+
+####################################################################################
+# Other:
+
+itemGroup.makersmark=Maker's Mark: The Minter's Mod
+container.makersmark.mailbox=Boîte aux lettres
+container.makersmark.bag=Sac en cuir
+container.makersmark.inspection=Inspection
+makersmark.letter.byAuthor=De: %1$s
+nei.makersmark.recipe.crafting=Maker's Mark - Recettes
+nei.makersmark.recipe.brewing=Maker's Mark - Alchimie
+nei.makersmark.recipe.anvil=Enclume - Recettes
+
+####################################################################################
+# Config:
+
+makersmark.configgui.limitedInspection=Inspection limitée
+makersmark.configgui.limitedInspection.tooltip=Quand activé, seule la loupe en diamant est disponible. Elle peut seulement être utilisée pour une inspection sommaire des objets qui ne sont pas des pièces.
+makersmark.configgui.creativeCoins=Afficher toutes les pièces
+makersmark.configgui.creativeCoins.tooltip=Quand activé, l'inventaire créatif liste tous les motifs pour tous les métaux (448 chacun).
+makersmark.configgui.creativeMailboxes=Afficher toutes les boîtes aux lettres
+makersmark.configgui.creativeMailboxes.tooltip=Quand activé, l'inventaire créatif liste toutes les couleurs de bois pour la boîte aux lettres.
+makersmark.configgui.nuggetsEnabled=Pièces en pépites
+makersmark.configgui.nuggetsEnabled.tooltip=Quand activé, les pièces peuvent être fondues en pépites, si le mod fournissant le lingot fournit également une pépite.
+
+####################################################################################
+#################################### HITCHCORE ####################################
+####################################################################################
+
+####################################################################################
+# Config:
+
+hitchcore.title=Mods de HitchH1k3r
+hitchcore.configgui.mod.tooltip=Paramètres pour %1$s
+hitchcore.configgui.general=Paramètres généraux
+hitchcore.configgui.general.tooltip=Paramètres généraux pour les mods de HitchH1k3r
+hitchcore.configgui.advanced=Paramètres avancés
+hitchcore.configgui.advanced.tooltip=Paramètres avancés pour les mods de HitchH1k3r
+hitchcore.configgui.general.updateCheck=Vérifier les mises à jour
+hitchcore.configgui.general.updateCheck.tooltip=Quand activé, les mods de HitchH1k3r vérifient au démarrage si une nouvelle version est disponible.
+hitchcore.configgui.advanced.debugMode=Mode de debug
+hitchcore.configgui.advanced.debugMode.tooltip=Quand activé, les mods de HitchH1k3r affichent des messages supplémentaires dans la console pour faciliter le debugging.
+
+####################################################################################
+# Update:
+
+hitchcore.update.none=Tous les mods de HitchH1k3r sont à jour !
+hitchcore.update.description=%1$s -> %2$s
+hitchcore.update.nag=§3%1$s §ra été mis à jour ! §3(%2$s -> %3$s)
+hitchcore.update.change.prompt=Tapez §3/hitch changes §rpour plus d'informations
+hitchcore.update.change.list=Changements dans §3%1$s §r: §3(%2$s -> %3$s)
+hitchcore.update.change.download=Vous pouvez télécharger les mises à jour sur:
+
+####################################################################################
+# Command:
+
+commands.hitch.usage=/hitch <commande> ou /hitch help
+commands.hitch.help=--- Aide pour /hitch <commande> ---
+commands.hitch.help.help=/hitch help
+commands.hitch.help.changes=/hitch changes
+commands.hitch.help.config=/hitch config [server/client] <catégorie:option> <nouvelle valeur>
+commands.hitch.config.notify=Mods de HitchH1k3r - %s a été modifié en %s
+commands.hitch.config.propertyError=Option de configuration introuvable
+commands.hitch.config.valueError=Valeur invalide pour %s
+commands.hitch.config.operatorError=Vous n'avez pas la permission de changer cette option

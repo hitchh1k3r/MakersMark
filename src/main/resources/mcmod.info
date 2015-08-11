@@ -1,0 +1,17 @@
+[
+  {
+    "modid": "makersmark",
+    "name": "Maker's Mark: The Minter's Mod",
+    "description": "Adds minting and marking to Minecraft.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "http://hitchh1k3rsguide.com/makersmark",
+    "updateUrl": "http://hitchh1k3rsguide.com/makersmark",
+    "authorList": ["HitchH1k3r"],
+    "credits": "",
+    "logoFile": "",
+    "parent": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
