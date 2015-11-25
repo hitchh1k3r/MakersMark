@@ -408,6 +408,9 @@ public class ItemCoin extends MakersBaseItem
                 i = 0;
                 for (MaterialDefinition material : materials)
                 {
+                    // TODO (hitch) add documenting comments to this:
+                    // I think it converts to parts of HSV or HSB, to increase Saturation of woods, and/or lightness of metals???
+
                     double red = colors[i].getRed() / 255.0;
                     double green = colors[i].getGreen() / 255.0;
                     double blue = colors[i].getBlue() / 255.0;

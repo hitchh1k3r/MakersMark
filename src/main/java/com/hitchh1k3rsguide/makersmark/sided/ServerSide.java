@@ -6,9 +6,6 @@ import com.hitchh1k3rsguide.makersmark.sided.Proxy.IProxy;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.event.*;
-import net.minecraftforge.fml.common.registry.LanguageRegistry;
-
-import java.util.HashMap;
 
 public class ServerSide implements IProxy
 {
@@ -21,13 +18,6 @@ public class ServerSide implements IProxy
     @Override
     public void preInit(FMLPreInitializationEvent event)
     {
-        HashMap<String, String> lang = new HashMap<String, String>();
-        // lang.put("hitchcore.update.description", "Update Available");
-        lang.put("hitchcore.update.nag", "%1s has been updated!§4 (%2s -> %3s)");
-        lang.put("hitchcore.update.change.prompt", "Type§3 /hitch changes§r for more information.");
-        lang.put("hitchcore.update.change.list", "%1s Changes:§4 (%2s -> %3s)");
-        lang.put("hitchcore.update.change.download", "You can download updates at:§3 http://hitchh1k3rsguide.com/mods");
-        LanguageRegistry.instance().injectLanguage("en_US", lang);
     }
 
     @Override

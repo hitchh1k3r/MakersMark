@@ -59,7 +59,7 @@ public class NEICommon
                     listAll.add(iStack);
                 }
             }
-            listAll.sort(new Comparator<ItemStack>()
+            Collections.sort(listAll, new Comparator<ItemStack>()
             {
                 @Override
                 public int compare(ItemStack o1, ItemStack o2)

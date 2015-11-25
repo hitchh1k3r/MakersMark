@@ -131,63 +131,66 @@ public class TEMailbox extends TileEntity implements IMakersRenderingTE
     @Override
     public void renderTileEntityAt(TileEntity tileEntity, double renderX, double renderY, double renderZ, float partialTick, int blockDamage, TileEntitySpecialRenderer renderer)
     {
-        FontRenderer fontRenderer = renderer.getFontRenderer();
-        String name;
-        if (hasCustomName())
-        {
-            name = getName();
-        }
-        else if (owner != null)
-        {
-            name = owner.getName();
-        }
-        else
-        {
-            name = StatCollector.translateToLocal(getName());
-        }
-        float textHover = 0.001f;
-        float scale = 0.5625f / Math.max(fontRenderer.getStringWidth(name), 14);
-        float offset = 0.40625f + textHover;
         IBlockState state = worldObj.getBlockState(pos);
-        if (state.getProperties().containsKey(BlockMailbox.FACING))
+        if (state.getBlock() == MakersMark.getBlocks().mailBox)
         {
-            EnumFacing facing = (EnumFacing) state.getValue(BlockMailbox.FACING);
-            // NORTH:
-            int rot = 0;
-            float xOff = 0;
-            float zOff = -1;
-            if (facing == EnumFacing.EAST)
+            FontRenderer fontRenderer = renderer.getFontRenderer();
+            String name;
+            if (hasCustomName())
             {
-                rot = 1;
-                xOff = 1;
-                zOff = 0;
+                name = getName();
             }
-            else if (facing == EnumFacing.SOUTH)
+            else if (owner != null)
             {
-                rot = 2;
-                xOff = 0;
-                zOff = 1;
+                name = owner.getName();
             }
-            else if (facing == EnumFacing.WEST)
+            else
             {
-                rot = 3;
-                xOff = -1;
-                zOff = 0;
+                name = StatCollector.translateToLocal(getName());
             }
+            float textHover = 0.001f;
+            float scale = 0.5625f / Math.max(fontRenderer.getStringWidth(name), 14);
+            float offset = 0.40625f + textHover;
+            if (state.getProperties().containsKey(BlockMailbox.FACING))
+            {
+                EnumFacing facing = (EnumFacing) state.getValue(BlockMailbox.FACING);
+                // NORTH:
+                int rot = 0;
+                float xOff = 0;
+                float zOff = -1;
+                if (facing == EnumFacing.EAST)
+                {
+                    rot = 1;
+                    xOff = 1;
+                    zOff = 0;
+                }
+                else if (facing == EnumFacing.SOUTH)
+                {
+                    rot = 2;
+                    xOff = 0;
+                    zOff = 1;
+                }
+                else if (facing == EnumFacing.WEST)
+                {
+                    rot = 3;
+                    xOff = -1;
+                    zOff = 0;
+                }
 
-            GlStateManager.enableRescaleNormal();
-            GlStateManager.pushMatrix();
-            GlStateManager.translate(xOff * offset, 0, zOff * offset);
-            GlStateManager.translate((float) renderX + 0.5F, (float) renderY + 0.5F - 0.03125f, (float) renderZ + 0.5F);
-            GlStateManager.scale(scale, scale, scale);
-            GL11.glNormal3f(0.0F, 0.0F, 1.0F);
-            GL11.glRotatef(180, 0, 0, 1);
-            GL11.glRotatef(90 * rot, 0, 1, 0);
-            GlStateManager.depthMask(false);
-            fontRenderer.drawString(name, -fontRenderer.getStringWidth(name) / 2, 0, textColors[this.color]);
-            GlStateManager.depthMask(true);
-            GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
-            GlStateManager.popMatrix();
+                GlStateManager.enableRescaleNormal();
+                GlStateManager.pushMatrix();
+                GlStateManager.translate(xOff * offset, 0, zOff * offset);
+                GlStateManager.translate((float) renderX + 0.5F, (float) renderY + 0.5F - 0.03125f, (float) renderZ + 0.5F);
+                GlStateManager.scale(scale, scale, scale);
+                GL11.glNormal3f(0.0F, 0.0F, 1.0F);
+                GL11.glRotatef(180, 0, 0, 1);
+                GL11.glRotatef(90 * rot, 0, 1, 0);
+                GlStateManager.depthMask(false);
+                fontRenderer.drawString(name, -fontRenderer.getStringWidth(name) / 2, 0, textColors[this.color]);
+                GlStateManager.depthMask(true);
+                GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
+                GlStateManager.popMatrix();
+            }
         }
     }
 

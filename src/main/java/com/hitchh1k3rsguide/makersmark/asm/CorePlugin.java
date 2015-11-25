@@ -1,7 +1,7 @@
 package com.hitchh1k3rsguide.makersmark.asm;
 
-import com.hitchh1k3rsguide.$CORE_REPLACE$.hitchcore.CoreUtils;
 import com.hitchh1k3rsguide.$CORE_REPLACE$.hitchcore.HitchCore;
+import com.hitchh1k3rsguide.$CORE_REPLACE$.hitchcore.VersionInfo;
 import net.minecraftforge.fml.relauncher.FMLInjectionData;
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin.SortingIndex;
@@ -27,7 +27,7 @@ public class CorePlugin implements IFMLLoadingPlugin
     public String getModContainerClass()
     {
         String hitchCore = "com.hitchh1k3rsguide.$CORE_REPLACE$.hitchcore.HitchCore";
-        int version = CoreUtils.versionToInt(HitchCore.VERSION);
+        VersionInfo version = new VersionInfo(HitchCore.VERSION);
 
         List<String> containers = FMLInjectionData.containers;
 
@@ -38,8 +38,8 @@ public class CorePlugin implements IFMLLoadingPlugin
             {
                 try
                 {
-                    int cV = CoreUtils.versionToInt((String) Class.forName(containerClass).getDeclaredField("VERSION").get(null));
-                    if (version > cV)
+                    VersionInfo cV = new VersionInfo((String) Class.forName(containerClass).getDeclaredField("VERSION").get(null));
+                    if (version.compareTo(cV) > 0)
                     {
                         containers.set(i, hitchCore);
                     }

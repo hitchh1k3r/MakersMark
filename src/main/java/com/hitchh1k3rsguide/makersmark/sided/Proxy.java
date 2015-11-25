@@ -14,7 +14,6 @@ import com.hitchh1k3rsguide.makersmark.items.ItemCoin;
 import com.hitchh1k3rsguide.makersmark.items.ItemCustomPotion;
 import com.hitchh1k3rsguide.makersmark.items.MyItems;
 import com.hitchh1k3rsguide.makersmark.items.crafting.DynamicShapedOreRecipe;
-import com.hitchh1k3rsguide.makersmark.items.crafting.ShapedRecipeNoContainers;
 import com.hitchh1k3rsguide.makersmark.network.MyMessages;
 import com.hitchh1k3rsguide.makersmark.potions.MyPotions;
 import com.hitchh1k3rsguide.makersmark.util.Utils;
@@ -36,6 +35,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.RecipeSorter;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
 
@@ -143,7 +143,6 @@ public class Proxy
         NetworkRegistry.INSTANCE.registerGuiHandler(MakersMark.instance, new GUIHandler());
 
         RecipeSorter.register(MakersMark.MODID + ":dynamic_shaped_ore", DynamicShapedOreRecipe.class, RecipeSorter.Category.SHAPED, "");
-        RecipeSorter.register(MakersMark.MODID + ":shaped_no_containers", ShapedRecipeNoContainers.class, RecipeSorter.Category.SHAPED, "");
     }
 
     public void postInit(FMLPostInitializationEvent event)
@@ -164,7 +163,7 @@ public class Proxy
 
         if (CoreConfig.debugMode)
         {
-            Utils.debugMsg("Adding Metals: " + String.join(", ", ItemCoin.metals.keySet()));
+            Utils.debugMsg("Adding Metals: " + StringUtils.join(ItemCoin.metals.keySet(), ", "));
         }
 
         Map<String, String> woodModOverrides = new HashMap<String, String>();
@@ -233,7 +232,7 @@ public class Proxy
 
         if (CoreConfig.debugMode)
         {
-            Utils.debugMsg("Adding Planks: " + String.join(", ", ItemCoin.woods.keySet()));
+            Utils.debugMsg("Adding Planks: " + StringUtils.join(ItemCoin.woods.keySet(), ", "));
         }
 
         ItemCoin.registerOreRecipes();
@@ -253,7 +252,7 @@ public class Proxy
             NBTTagCompound tag = new NBTTagCompound();
             tag.setString(BlockMailbox.TAG_MAILBOX_WOOD, BlockMailbox.enumToWood(wood).name);
             out.setTagCompound(tag);
-            GameRegistry.addRecipe(new ShapedRecipeNoContainers(3, 3, new ItemStack[]{ plank, plank, plank, plank, feather, plank, plank, plank, plank }, out));
+            GameRegistry.addShapedRecipe(out, "www", "wfw", "www", 'w', plank, 'f', feather);
         }
     }
 
