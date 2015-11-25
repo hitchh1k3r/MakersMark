@@ -1,6 +1,5 @@
 package com.hitchh1k3rsguide.makersmark.sided;
 
-import com.hitchh1k3rsguide.$CORE_REPLACE$.hitchcore.CoreConfig;
 import com.hitchh1k3rsguide.$CORE_REPLACE$.hitchcore.HitchCore;
 import com.hitchh1k3rsguide.makersmark.MakersMark;
 import com.hitchh1k3rsguide.makersmark.blocks.BlockMailbox;
@@ -161,10 +160,7 @@ public class Proxy
             }
         }
 
-        if (CoreConfig.debugMode)
-        {
-            Utils.debugMsg("Adding Metals: " + StringUtils.join(ItemCoin.metals.keySet(), ", "));
-        }
+        Utils.debugMsg("Adding Metals: " + StringUtils.join(ItemCoin.metals.keySet(), ", "));
 
         Map<String, String> woodModOverrides = new HashMap<String, String>();
         woodModOverrides.put("bush.NPlanks", "hopseed");
@@ -230,10 +226,7 @@ public class Proxy
             }
         }
 
-        if (CoreConfig.debugMode)
-        {
-            Utils.debugMsg("Adding Planks: " + StringUtils.join(ItemCoin.woods.keySet(), ", "));
-        }
+        Utils.debugMsg("Adding Planks: " + StringUtils.join(ItemCoin.woods.keySet(), ", "));
 
         ItemCoin.registerOreRecipes();
 
