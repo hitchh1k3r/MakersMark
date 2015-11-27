@@ -63,4 +63,31 @@ public class GraphicUtils
         return null;
     }
 
+    @SideOnly(Side.CLIENT)
+    public static int[] getScaledResolution(Minecraft mc)
+    {
+        double scaledWidth = mc.displayWidth;
+        double scaledHeight = mc.displayHeight;
+        int scaleFactor = 1;
+        boolean flag = mc.isUnicode();
+        int k = mc.gameSettings.guiScale;
+
+        if (k == 0)
+        {
+            k = 1000;
+        }
+
+        while (scaleFactor < k && scaledWidth / (scaleFactor + 1) >= 320 && scaledHeight / (scaleFactor + 1) >= 240)
+        {
+            ++scaleFactor;
+        }
+
+        if (flag && scaleFactor % 2 != 0 && scaleFactor != 1)
+        {
+            --scaleFactor;
+        }
+
+        return new int[]{ MathHelper.ceiling_double_int(scaledWidth / (double) scaleFactor), MathHelper.ceiling_double_int(scaledHeight / (double) scaleFactor) };
+    }
+
 }

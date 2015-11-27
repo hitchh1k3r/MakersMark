@@ -4,9 +4,9 @@ import com.google.common.collect.Lists;
 import com.hitchh1k3rsguide.makersmark.MakersMark;
 import com.hitchh1k3rsguide.makersmark.items.ItemBag;
 import com.hitchh1k3rsguide.makersmark.items.MyItems;
+import com.hitchh1k3rsguide.makersmark.util.GraphicUtils;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.RenderHelper;
@@ -65,9 +65,9 @@ public class GUIInspection extends GuiScreen
         this.guiTop = (this.height - this.ySize) / 2;
         midX = guiLeft + 8 + (18 * selection) + 8;
         midY = guiTop + 76 + 8;
-        ScaledResolution scaledresolution = new ScaledResolution(this.mc, this.mc.displayWidth, this.mc.displayHeight);
-        int xScale = scaledresolution.getScaledWidth();
-        int yScale = scaledresolution.getScaledHeight();
+        int[] scaledRes = GraphicUtils.getScaledResolution(this.mc);
+        int xScale = scaledRes[0];
+        int yScale = scaledRes[1];
         Mouse.setCursorPosition(midX * this.mc.displayWidth / xScale, midY * this.mc.displayHeight / yScale + 1);
     }
 

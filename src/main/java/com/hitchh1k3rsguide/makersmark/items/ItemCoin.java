@@ -340,7 +340,7 @@ public class ItemCoin extends MakersBaseItem
 
                     if (s != null)
                     {
-                        tooltip.add(EnumChatFormatting.DARK_BLUE + StatCollector.translateToLocalFormatted(MakersMark.MODID + ".report.token", NBTUtil.readGameProfileFromNBT(s).getName()));
+                        tooltip.add(EnumChatFormatting.GRAY + StatCollector.translateToLocalFormatted(MakersMark.MODID + ".report.token", NBTUtil.readGameProfileFromNBT(s).getName()));
                     }
                 }
             }

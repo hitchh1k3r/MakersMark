@@ -14,7 +14,7 @@ import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod(version = MakersMark.VERSION, modid = MakersMark.MODID, canBeDeactivated = false, dependencies = "required-after:hitchcore")
+@Mod(version = MakersMark.VERSION, modid = MakersMark.MODID, canBeDeactivated = false, dependencies = "required-after:hitchcore", acceptedMinecraftVersions = "[1.8,1.9)")
 public class MakersMark
 {
 

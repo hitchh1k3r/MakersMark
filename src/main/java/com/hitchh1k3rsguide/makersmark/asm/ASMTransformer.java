@@ -120,6 +120,12 @@ public class ASMTransformer implements IClassTransformer
                     {
                         node = node.getNext().getNext().getNext().getNext();
 
+                        if (!(node instanceof JumpInsnNode) && node instanceof LabelNode && node.getNext() instanceof LineNumberNode)
+                        {
+                            // Minecraft 1.8.8 seems to have the jump instruction on another line...
+                            node = node.getNext().getNext();
+                        }
+
                         if (node instanceof JumpInsnNode)
                         {
                             // Patch New ASM:
@@ -136,8 +142,20 @@ public class ASMTransformer implements IClassTransformer
                             didTransform = true;
                             slotClick.instructions.insertBefore(node, newInstructions);
                         }
+                        else if (TEST_MODE)
+                        {
+                            Utils.debugErr("Patch area did not validate...");
+                        }
+                    }
+                    else if (TEST_MODE)
+                    {
+                        Utils.debugErr("Could not find area to patch...");
                     }
                 }
+            }
+            else if (TEST_MODE)
+            {
+                Utils.debugErr("Could not find local variables (l1 " + (local_l1 == -1 ? "not found" : "found") + ", slot2" + (local_slot2 == -1 ? "not found" : "found") + ", itemstack3)" + (local_itemstack3 == -1 ? "not found" : "found"));
             }
         }
         else if (TEST_MODE)

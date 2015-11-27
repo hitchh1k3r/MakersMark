@@ -101,6 +101,7 @@ public class MessageAuxEvent implements IMessage
                 double dZ = Math.sin(dir) * mag;
                 try
                 {
+                    // "func_179344_e" will be called "getShouldIgnoreRange"
                     EntityFX entityfx = (EntityFX) METHOD_spawnEntityFX.invoke(Minecraft.getMinecraft().renderGlobal, enumparticletypes.getParticleID(), enumparticletypes.func_179344_e(), x + dX * 0.1D, y + 0.3D, z + dZ * 0.1D, dX, dY, dZ, new int[0]);
                     if (entityfx != null)
                     {
